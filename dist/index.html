@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trade to World</title>
+  <script type="module" crossorigin src="/assets/index-3e79c5c4.js"></script>
+  <link rel="stylesheet" href="/assets/index-5517f6d5.css">
+</head>
+<body> 
+<div class="header">
+    <div class="header__wrapper">
+      <a href="https://tradeto.world/"><img src="data:image/png;base64,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" alt=""></a>
+      <div class="header__menu">
+        <a href="https://tradeto.world/markets" class="item__menu">B2B Marketplace</a>
+        <a href="" class="item__menu">All-in-one Export Platform</a>
+        <a href="" class="item__menu">Communicating Worldwide</a>
+        <a href="" class="item__menu">Engineering Trade Processes</a>
+        <a href="" class="item__menu">Promoting Sustainability</a>
+        <a href="https://tradeto.world/partners" class="item__menu">Apply as Partner</a>
+        <a href="https://tradeto.world/players/sellers" class="item__menu">Register as Seller</a>
+        <a href="https://tradeto.world/players/buyers" class="item__menu">Register as Buyer</a>
+      </div>
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span class="wr"></span>
+        </label>
+        <ul class="menu__box">
+          <li class="burger-img-block"><img src="data:image/png;base64,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" alt="" class="burger-img"></li>
+          <li><div class="line"></div></li>
+          <li><a class="menu__item" href="#">B2B Marketplace</a></li>
+          <li><a class="menu__item" href="#">All-in-one Export Platform</a></li>
+          <li><a class="menu__item" href="#">Communicating Worldwide</a></li>
+          <li><a class="menu__item" href="#">Engineering Trade Processes</a></li>
+          <li><a class="menu__item" href="#">Promoting Sustainability</a></li>
+          <li><a class="menu__item" href="#">Apply as Partner</a></li>
+          <li><a class="menu__item" href="#">Register as Seller</a></li>
+          <li><a class="menu__item" href="#">Register as Buyer</a></li>
+        </ul>
+      </div>
+    </div>    
+</div>
+<div class="container">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+          <div class="slide-content">
+            <picture>
+              <source srcset="/assets/Banner-mob-85d99f91.png " media="(max-width: 374px)">
+              <source srcset="/assets/Banner-tablet-4612ab9d.png " media="(min-width: 376px) and (max-width: 834px)">
+              <img src="/assets/Banner-2e0cfd58.png" alt="MDN">
+            </picture>
+              <div class="text_slide">
+                <div class="title-slide">All in one export platform</div>
+                <div class="sub-title-slide m-20">Through <span  class="green">TradeToWorld</span>, even a micro company with no experience in the Export field, finds all the resources and guidance to successfully promote and execute its international expansion</div>
+              </div>
+          </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-content">
+          <picture>
+            <source srcset="/assets/Banner-mob-85d99f91.png " media="(max-width: 374px)">
+            <source srcset="/assets/Banner-tablet-4612ab9d.png " media="(min-width: 376px) and (max-width: 834px)">
+            <img src="/assets/Banner-2e0cfd58.png" alt="MDN">
+          </picture>
+            <div class="text_slide">
+              <div class="title-slide">All in one export platform</div>
+              <div class="sub-title-slide m-20">Through <span  class="green">TradeToWorld</span>, even a micro company with<br> no experience in the Export field, finds all the<br> resources and guidance to successfully promote<br> and execute its international expansion</div>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-content">
+          <picture>
+            <source srcset="/assets/Banner-mob-85d99f91.png " media="(max-width: 374px)">
+            <source srcset="/assets/Banner-tablet-4612ab9d.png " media="(min-width: 376px) and (max-width: 834px)">
+            <img src="/assets/Banner-2e0cfd58.png" alt="MDN">
+          </picture>
+            <div class="text_slide">
+              <div class="title-slide">All in one export platform</div>
+              <div class="sub-title-slide m-20">Through <span  class="green">TradeToWorld</span>, even a micro company with<br> no experience in the Export field, finds all the<br> resources and guidance to successfully promote<br> and execute its international expansion</div>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-content">
+          <picture>
+            <source srcset="/assets/Banner-mob-85d99f91.png " media="(max-width: 374px)">
+            <source srcset="/assets/Banner-tablet-4612ab9d.png " media="(min-width: 376px) and (max-width: 834px)">
+            <img src="/assets/Banner-2e0cfd58.png" alt="MDN">
+          </picture>
+            <div class="text_slide">
+              <div class="title-slide">All in one export platform</div>
+              <div class="sub-title-slide m-20">Through <span  class="green">TradeToWorld</span>, even a micro company with<br> no experience in the Export field, finds all the<br> resources and guidance to successfully promote<br> and execute its international expansion</div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+<div class="section-1">
+  <div class="container__content">
+    <div class="section-1__wrapper">
+      <div class="text">
+        <div class="title black f-36 m-31">B2B Marketplace</div>
+        <div class="sub__title black f-20 m-15"><strong>TradeToWorld (TTW)</strong> is a <strong>B2B platform</strong> where Sellers display their products and Buyers visualize them, selecting wished items and the two parties start a direct communication to negotiate a trade deal.</div>
+        <div class="sub__title black f-20 m-20">So, like all major global B2B marketplaces, TTW provides a <strong>matching between international Sellers and Buyers.</strong></div>
+      </div>
+      <img src="/assets/Marketplace-8f9c7fa9.png" alt="" class="section-1-img">
+    </div>
+  </div>
+</div>
+<div class="section-2">
+  <div class="container__content">
+    <div class="section-2__wrapper">
+      <div class="text">
+        <div class="title f-24 mobile">All-in-one Export Platform</div>
+        <div class="sub__title f-20 m-20">However, TTW goes far beyond its scope to provide <strong>limitless opportunities
+          and global visibility</strong> to your Selling Company. As a matter of fact, the
+          platform helps SMEs (Small to Medium Enterprises) in all their trade journey.
+          <strong> Subscribing as Seller</strong>, you will:</div>
+      </div>
+      <div class="icons__menu">
+        <div class="icon__item">
+          <img src="data:image/png;base64,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" alt="">
+          <div class="sub__title f-20 m-15"><strong>Digitize</strong> your company data and catalogues</div>
+        </div>
+        <div class="icon__item">
+          <img src="data:image/png;base64,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" alt="">
+          <div class="sub__title f-20 m-15">Create an <strong>attractive showroom</strong> of your products</div>
+        </div>
+        <div class="icon__item">
+          <img src="data:image/png;base64,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" alt="">
+          <div class="sub__title f-20 m-15">Experience <strong>simplified trade processes</strong> and tasks</div>
+        </div>
+        <div class="icon__item">
+          <img src="/assets/Icon4-7bdd7f32.png" alt="">
+          <div class="sub__title f-20 m-15">Receive <strong>professional support</strong> for any trade need upon request</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section-3">
+  <div class="container__content">
+    <div class="section-3__wrapper">
+      <div class="text">
+        <div class="title white f-36 m-57">Communicating Worldwide</div>
+        <div class="sub__title white f-20 m-20">Nowadays, Buyers and Sellers dialogue with salesforce, service companies, trade partners, logistics carriers, bank officers, etc. using multiple communication channels: email, calls, video calls, chat or text messages, through a wide range of platforms.</div>
+        <div class="sub__title white f-20 m-15">TradeToWorld simplifies it, letting all of them can use, free of charge, a <strong>unique gateway: TTW Interactive Room.</strong></div>
+        <div class="sub__title white f-20 m-15">By <strong>App</strong> (smartphones, tablets) or <strong>Marketplace page</strong> (desktop), Selle rs and Buyers can call, chat, video conferencing and set up webinars and live demos in one unique place!</div>
+      </div>
+      <img src="/assets/Group1-6d63c104.png" alt="" class="section-3-img">
+    </div>
+  </div>
+</div>
+<div class="section-4">
+  <div class="container__content">
+    <div class="section-4__wrapper">
+      <img src="/assets/Group2-b6249ba3.png" alt="" class="section-4-img">
+      <div class="text">
+        <div class="title black f-36">Engineering Trade Processes</div>
+        <div class="sub__title black f-20 m-20">TradeToWorld is a newborn marketplace. Its early stage allows the platform to adopt the newest technologies to digitize trade physical activities and dramatically <strong>simplify and automate all trade processes</strong>: documentation, communication, exchange of data and information among all trade players.</div>
+        <img src="/assets/img1-c5e2624f.png" alt="" class="section-4-tablet">
+        <div class="sub__title black f-20 m-15">Leveraging the extensive experience of the founders in international trade, and the great automation in managing trade processes through new technologies, such as:</div>
+        <div class="sub__text m-30">
+          <div class="sub__text-item m-10">
+            <div class="sub__title point f-24 pl-20">Artificial Intelligence</div>
+            <div class="sub__title black f-20 m-10 pl-20">For the marketplace internal search engine optimization, scouting, classifying and reorganizing trade data in the world net</div>
+          </div>
+          <div class="sub__text-item m-10">
+            <div class="sub__title point f-24 pl-20">Internet of Things</div>
+            <div class="sub__title black f-20 m-10 pl-20">Logistics data and shipment tracking</div>
+          </div>
+          <div class="sub__text-item m-10">
+            <div class="sub__title point f-24 pl-20">Blockchain Technology</div>
+            <div class="sub__title black f-20 m-10 pl-20">Documentation flow and payment transactions</div>
+          </div>
+          <img src="/assets/img2-727a3763.png" alt="" class="section-4-tablet">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section-5">
+  <div class="container__content">
+    <div class="section-5__wrapper">
+      <div class="text">
+        <div class="title__text">
+          <div class="title f-36">Promoting Sustainability</div>
+          <div class="title f-20 f-16 m-20 tablet"><strong>TradeToWorld, toward sustainability as key factor in international trade and supply chains</strong></div>
+        </div>
+        <div class="sub__title-text m-30">
+          <div class="sub__title f-20">The marketplace company, TradeToWorld Marketplace Corporation, has been establish as <strong>“Benefit Corporation”</strong>. This means that we are inner engaged in creating a sustainable company in all means: versus our employees, stakeholders, community and environment. No compromise.</div>
+          <div class="sub__title f-20">But, as global gateway of companies, we understand how our role can take a much wider role: <strong>promoting sustainable business</strong>, asking our corporate users to adopt the change and to work to constantly improve their societal profile. How?</div>
+          <div class="sub__title f-20">TTW is the first marketplace in the world which embeds in its <strong>Search Engine</strong> parameters such as <strong>supplier</strong> or <strong>product sustainable ranking</strong>. And companies with a good score get promoted by higher visibility and free services.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section-6">
+  <div class="container__content">
+    <div class="section-6__wrapper">
+      <div class="block-1">
+        <div class="text">
+          <div class="title white f-36">Apply as Partner</div>
+          <div class="sub__title white f-20 m-20"><strong>Are you a Trade Association, Bank, Chamber of Commerce or Business Organization?</strong></div>
+          <div class="sub__title white f-20 m-15">Subscribe as Sales Partner of TradeToWorld, disclosing to your companies worldwide business opportunities, at preferred terms like privileged access, proprietary dashboard, revenue sharing opportunity and joint brand campaigns to promote sustainability and fair trade. Leave your data and we will contact you to provide more info.</div>
+          <div class="button"><a href="" class="button__style-white white">LEAVE HERE</a></div>
+        </div>
+        <img src="/assets/areyou-13045bf4.png" alt="" class="section-6-img">
+      </div>
+      <img src="/assets/Group3-7bc8f80f.png" alt="" class="section-6-img-tablet">
+      <div class="block-2">
+        <img src="/assets/areyou2-44fd84fb.png" alt="" class="section-6-img">
+        <div class="text">
+          <div class="sub__title white f-20"><strong>Are you a Logistics Company, Trade Finance Service Provider, Custom Broker, International Law Firm, Certification Agency, etc.?</strong></div>
+          <div class="sub__title white f-20 m-15">Subscribe as Service Partner of TradeToWorld, giving you access to a vast audience of import export companies seeking trade support services. Pre-register and submit your application.</div>
+          <div class="button"><a href="https://tradeto.world/preregister" class="button__style-white white">PRE-REGISTER HERE</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section-7">
+  <div class="container__content">
+    <div class="section-7__wrapper">
+      <div class="text">
+        <div class="title black f-36">Register as Seller</div>
+        <div class="sub__title black f-20 m-20">Are you a <strong>manufacturing company</strong> that produce products, components, semi-finished products and even raw materials? Or a <strong>brand company</strong> delegating the production of your items to external OEM? Or, again, a <strong>B2B reseller</strong> uploading your products and selling from your stock location?</div>
+        <div class="sub__title black f-20 m-15">Please pre-register and discover the multiple benefits to join, a customer representative will contact you in order to give you all the details and proceed with the registration of your company.</div>
+        <div class="button"><a href="https://tradeto.world/preregister" class="button__style-black black">PRE-REGISTER HERE</a></div>
+      </div>
+      <img src="/assets/girl-9cbadd26.png" alt="" class="section-7-img">
+    </div>
+  </div>
+</div>
+<div class="section-8">
+  <div class="container__content">
+    <div class="section-8__wrapper">
+      <img src="/assets/boy-5237e530.png" alt="" class="section-8-img">
+      <div class="text">
+        <div class="title black f-36">Register as Buyer</div>
+        <div class="sub__title black f-20 m-20">Are you an International <strong>wholesaler, distributor</strong> or <strong>retailer</strong> seeking for exclusive products to import and ? Or a <strong>manufacturing company</strong> looking for components or raw materials?</div>
+        <div class="sub__title black f-20 m-15">You are in the right place. Register as Buyer and the platform will provide you a powerful search engine easing and widening the search of the right product for your business. Click and leave your data, a customer representative will contact you shortly.</div>
+        <div class="button"><a href="https://tradeto.world/preregister" class="button__style-black black">PRE-REGISTER HERE</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section-9">
+  <div class="container__content">
+    <div class="section-9__wrapper">
+      <div class="text">
+        <div class="title white f-36">Write us</div>
+        <div class="sub__title white f-20 m-20">If you have any question, or you want to talk to one of our sales representatives to learn more, please write us at <strong>sales@tradeto.world</strong></div>
+        <div class="sub__title white f-20 m-15">Or leave a message to this form, with your references: we will contact you shortly!</div>
+        <div class="linkedin__sub-title m-30">
+          <a href="https://www.linkedin.com/company/tradetoworld/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFbSURBVHgB7ZjRjcIwDIYddO/Xm+DCBh2hI7AB3QA2YAS6QRmBDYAJYAO6QbuBsdUgQbFRJBKah37SL6rEUX/FqWMBiJiRKlKL48DvrdmH4QcAKGF8KjbT0kMG49OxGYRE+HkztyddSJZUuN+4KIdqMYixpCtGRjJTK6YLjMxMeO9R2cQLREYyo31ZFiIjmVnTjkmGVhAbJX1nUu7m7xU6OknVmRkkhFb0ClIzGOMimLvnjrQW1pRuXUU6kfiq+SP9ujmOsaChpO9fiDs8zF+F+ZK0hTdgXzzP2pkJacbrsnWGxHYl2JkxxnSecQ30KX8h+AHGvhRwyja8C0rYSVscJE0uZnihtpIhGsujpsmxgeevhc/RUogTUxrazEIYy8GT0GYyzzGRpCrwZEZjMqMxmdHQ+pk5VWcDX+aTtrMRxuwnscn1wF59yBfo2MwO0mB/b4ZqHPefqy37uAFa2rPpyurDwAAAAABJRU5ErkJggg==" alt=""></a>
+          <div class="sub__title white f-20">Follow us in <strong><a href="https://www.linkedin.com/company/tradetoworld/">Linkedin</a></strong></div>
+        </div>
+      </div>
+      <div class="registration">
+        <div class="part">
+          <input type="text" placeholder="Your Name*" class="input__style">
+          <input type="text" placeholder="Company*" class="input__style">
+        </div>
+        <div class="part m-20">
+          <input type="text" placeholder="Your E-mail*" class="input__style">
+          <input type="text" placeholder="Your Phone" class="input__style">
+        </div>
+        <div class="part m-20">
+          <input type="text" placeholder="Your Message" class="input__styles">
+        </div>
+        <div class="parts">
+          <div class="ad">
+            <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+            <label for="happy"><div class="sub__title white f-20">I accept the conditions*</div></label>
+          </div>
+          <div class="button__send"><a href="" class="send__style-white white">SEND</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="container__content">
+      <div class="footer__wrapper">
+        <div class="cool">
+            <div class="footer__items-1"><a href="https://tradeto.world/"><img src="data:image/png;base64,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" alt="" class="logo__tablets"></a></div>
+            <div class="footer__part1">
+              <div class="footer__items-1"><a href="https://tradeto.world/"><img src="data:image/png;base64,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" alt="" class="logo__tablet"></a></div>
+              <div class="footer__items">
+                <a href="" class="footer__item">B2B Marketplace</a>
+                <a href="" class="footer__item">All-in-one Export Platform</a>
+                <a href="" class="footer__item">Communicating Worldwide</a>
+                <a href="" class="footer__item">Engineering Trade Processes</a>
+              </div>
+              <div class="footer__items">
+                <a href="" class="footer__item">Promoting Sustainability</a>
+                <a href="" class="footer__item">Apply as Partner</a>
+                <a href="" class="footer__item">Register as Seller</a>
+                <a href="" class="footer__item">Register as Buyer</a>
+              </div>
+              <div class="footer__items">
+                <a href="" class="footer__item">Privacy Policy</a>
+                <a href="" class="footer__item">Terms</a>
+                <a href="https://www.linkedin.com/company/tradetoworld/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFFSURBVHgB7ZbhTQMxDIVfEAOECTgmoN3gNoBOAGxwTEA3gA1gBDYgG3BMQDegGwRbdaXUOKJqk7Q/+qSnXBL3PuVkO0WMsSN/xHb6ZKbjBwATtFVgcMQBdJZZX5JHGZuB38hXzrkp+YKe56gg/an5hAxcpEEU8kODR0HpE48aKnpHYWlwLrs7VAZ7+qzzdIHmAw09CitXToG8wOqkPSroYHV8bqy9YDOZpuRneeasH5I9L/FLGde1z+s9+Ra5/DB66Z3a75O9b7XHff6V7DPv7qQ3/1Guc20rPt0jlaDZ4aQ0Z9beXmAG5qAKHlASvBaXHHc38WCEjMXBBLrHKvm8+MkI+yoOJt2oOTehy/9+VAJsZXSHBuCddAKfwNVk3U58KbhkvlGTfGmoeKucJuod1zrg6P5XNwEHtNfI4AcYt0dFBfLsF6jCINlHT9UnAAAAAElFTkSuQmCC" alt="" class="linkedin-icon-tablet"></a>
+              </div>
+              <div class="footer__items">
+                <a href="https://www.linkedin.com/company/tradetoworld/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFFSURBVHgB7ZbhTQMxDIVfEAOECTgmoN3gNoBOAGxwTEA3gA1gBDYgG3BMQDegGwRbdaXUOKJqk7Q/+qSnXBL3PuVkO0WMsSN/xHb6ZKbjBwATtFVgcMQBdJZZX5JHGZuB38hXzrkp+YKe56gg/an5hAxcpEEU8kODR0HpE48aKnpHYWlwLrs7VAZ7+qzzdIHmAw09CitXToG8wOqkPSroYHV8bqy9YDOZpuRneeasH5I9L/FLGde1z+s9+Ra5/DB66Z3a75O9b7XHff6V7DPv7qQ3/1Guc20rPt0jlaDZ4aQ0Z9beXmAG5qAKHlASvBaXHHc38WCEjMXBBLrHKvm8+MkI+yoOJt2oOTehy/9+VAJsZXSHBuCddAKfwNVk3U58KbhkvlGTfGmoeKucJuod1zrg6P5XNwEHtNfI4AcYt0dFBfLsF6jCINlHT9UnAAAAAElFTkSuQmCC" alt="" class="linkedin-icon"></a>
+                <div class="adress">621 - 550 West Broadway, Vancouver<br>BC Canada V5Z 0E9<br>Reg Number BC1357806</div>
+              </div>
+            </div>
+            <div class="footer__items-mobile">
+              <a href="https://www.linkedin.com/company/tradetoworld/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFFSURBVHgB7ZbhTQMxDIVfEAOECTgmoN3gNoBOAGxwTEA3gA1gBDYgG3BMQDegGwRbdaXUOKJqk7Q/+qSnXBL3PuVkO0WMsSN/xHb6ZKbjBwATtFVgcMQBdJZZX5JHGZuB38hXzrkp+YKe56gg/an5hAxcpEEU8kODR0HpE48aKnpHYWlwLrs7VAZ7+qzzdIHmAw09CitXToG8wOqkPSroYHV8bqy9YDOZpuRneeasH5I9L/FLGde1z+s9+Ra5/DB66Z3a75O9b7XHff6V7DPv7qQ3/1Guc20rPt0jlaDZ4aQ0Z9beXmAG5qAKHlASvBaXHHc38WCEjMXBBLrHKvm8+MkI+yoOJt2oOTehy/9+VAJsZXSHBuCddAKfwNVk3U58KbhkvlGTfGmoeKucJuod1zrg6P5XNwEHtNfI4AcYt0dFBfLsF6jCINlHT9UnAAAAAElFTkSuQmCC" alt="" class="linkedin-icon mob"></a>
+              <div class="adress">621 - 550 West Broadway, Vancouver<br>BC Canada V5Z 0E9<br>Reg Number BC1357806</div>
+            </div>
+        </div>
+        <div class="footer__part2">
+          <div class="reserved">
+            <div class="reserved-1">© All Rights Reserved - GruppoBPC International Ltd. - Vat Number IE 9854121F</div>
+            <div class="adress-tablet">621 - 550 West Broadway, Vancouver<br>BC Canada V5Z 0E9<br>Reg Number BC1357806</div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</body>
+</html>
+
+
+

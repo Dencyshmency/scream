@@ -1,0 +1,247 @@
+#menu__toggle {
+  opacity: 0;
+}
+
+
+
+
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex;/* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: absolute;
+  top: 20px;
+  left: 90%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+
+  z-index: 101;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #004D40;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  z-index: 100;
+ 
+}
+
+
+
+.burger-img-block {
+  position: absolute;
+  top: 30px;
+  left: 33px;
+  
+}
+
+.line {
+  background-color: #7FA69F;
+  height: 2px;
+  width: calc(100% - 58px);
+  margin: 29px 33px;
+}
+
+/* элементы меню */
+.menu__item {
+  display: flex;
+  padding: 12px 33px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 24px;
+  color: #FFFFFF;
+  position: relative;
+}
+
+.menu__item:hover {
+  color: #69F0AE;
+  background-color: #ffffff00;
+  padding-left: 120px;
+}
+
+.menu__item:after {
+position: absolute;
+content: "";
+width: 0px;
+height: 4px;
+background-color: #FFFFFF;
+border-radius: 4px;
+left: 33px;
+top: calc(50% - 2px);
+transition: 0.2s ease-in-out;
+}
+
+.menu__item:hover:after {
+  position: absolute;
+  content: "";
+  width: 66px;
+  height: 4px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  left: 33px;
+  top: calc(50% - 2px);
+  transition: 0.2s ease-in-out;
+  }
+
+
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  top: 0;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .25s;
+}
+.menu__box {
+  transition-duration: .25s;
+}
+.menu__item {
+  transition-duration: .25s;
+}
+
+@media screen and (max-width: 375px) { 
+
+  .menu__btn {
+    top: 23px;
+    left: 83%;
+    width: 40px;
+    height: 40px;
+  }
+
+  
+  .menu__item {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .menu__item:hover {
+    color: #69F0AE;
+    background-color: #ffffff00;
+    padding-left: 65px;
+  }
+  
+  .menu__item:after {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  left: 33px;
+  top: calc(50% - 2px);
+  transition: 0.2s ease-in-out;
+  }
+  
+  .menu__item:hover:after {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    left: 33px;
+    top: calc(50% - 2px);
+    transition: 0.2s ease-in-out;
+    }
+
+    .burger-img-block {
+      position: absolute;
+      top: 25px;
+      left: 33px;
+      
+    }
+
+    .burger-img {
+      width: 129px;
+      height: 35px;
+    }
+
+    .line {
+      background-color: #7FA69F;
+      height: 2px;
+      width: calc(100% - 58px);
+      margin: 20px 33px;
+    }
+}
+
+
+@media screen and (max-width: 510px) { 
+
+  .menu__item {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .menu__item:hover {
+    color: #69F0AE;
+    background-color: #ffffff00;
+    padding-left: 33px;
+  }
+  
+  .menu__item:after {
+    content: none;
+    }
+  
+  .menu__item:hover:after {
+    content: none;
+    }
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 1250px) {
+  .menu__btn {
+    top: 20px;
+    left: calc(90% - 45px);
+    width: 45px;
+    height: 45px;
+   
+  }
+}
